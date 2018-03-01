@@ -1,27 +1,8 @@
 <template>
-  <!-- Always shows a header, even in smaller screens. -->
+  <require from="./navigation/navbar.html"></require>
+  
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <div class="mdl-layout-spacer"></div>
-        <!-- Title -->
-        <span class="mdl-layout-title">Subject Hub</span>
-        <!-- Add spacer, to align navigation to the right -->
-        <div class="mdl-layout-spacer"></div>
-        <!-- Navigation. We hide it in small screens. -->
-        <button class="mdl-button mdl-js-button mdl-button--icon">
-          <i class="material-icons">apps</i>
-        </button>
-      </div>
-    </header>
-    <div class="mdl-layout__drawer">
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link">Link</a>
-        <a class="mdl-navigation__link">Link</a>
-        <a class="mdl-navigation__link">Link</a>
-        <a class="mdl-navigation__link">Link</a>
-      </nav>
-    </div>
+    <navbar containerless></navbar>
     <main class="mdl-layout__content">
       <div class="page-content">
         <!-- Your content goes here -->
