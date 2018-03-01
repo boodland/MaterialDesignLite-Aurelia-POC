@@ -1,0 +1,19 @@
+.mdl-layout__header-row {
+  padding: 0 0 0 56px;
+}
+
+.navbar-header--action {
+  width:48px;
+  height: 48px;
+  margin: 4px;
+}
+
+@media screen and (min-width: 1025px){
+  .mdl-layout__header-row {
+    padding: 0 0 0 72px;
+  }
+
+  .navbar-header--action {
+    margin: 8px 12px;
+  }
+}
