@@ -1,5 +1,9 @@
+.mdl-layout__drawer-button {
+  display: none;
+}
+
 .mdl-layout__header-row {
-  padding: 0 0 0 56px;
+  padding: 0;
 }
 
 .navbar-header--action {
@@ -8,11 +12,7 @@
   margin: 4px;
 }
 
-@media screen and (min-width: 1025px){
-  .mdl-layout__header-row {
-    padding: 0 0 0 72px;
-  }
-
+@media screen and (min-width: 1025px) {
   .navbar-header--action {
     margin: 8px 12px;
   }
