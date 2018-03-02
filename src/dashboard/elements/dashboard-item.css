@@ -1,0 +1,11 @@
+.dashboard-item {
+  max-width: 190px;
+  margin: 4px;
+  padding: 4px;
+}
+
+@media (max-width: 411px){
+  .dashboard-item {
+    max-width: 250px;
+  }
+}
