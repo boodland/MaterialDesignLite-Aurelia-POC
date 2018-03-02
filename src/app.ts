@@ -10,7 +10,14 @@ export class App {
     config.options.pushState = true;
     config.options.root = '/';
     config.map([
-      { route: ['', 'dashboard'], name: 'dashboard', moduleId: PLATFORM.moduleName('dashboard/dashboard-list'), nav: true, title: 'Dashboard' }
+      { route: '', redirect: 'dashboard' },
+      { 
+        route: 'dashboard', 
+        name: 'dashboard', 
+        moduleId: PLATFORM.moduleName('dashboard/dashboard-list'), 
+        nav: true, 
+        title: 'Dashboard' 
+      }
     ]);
   }
 }
