@@ -1,10 +1,63 @@
 .dashboard-item {
   max-width: 190px;
-  margin: 4px;
-  padding: 4px;
+  margin: 6px 4px;
+  padding: 6px;
 }
 
-@media (max-width: 411px){
+.dashboard-item__title, .dashboard-item__subtitle-text  {
+  margin: 0 8px 10px 8px;
+  padding: 0;
+}
+
+.dashboard-item__title-text {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.dashboard-item__subtitle-text > span {
+  font-size: 14px;
+}
+
+.dashboard-item__subtitle-text > i {
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.dashboard-item__content {
+  background-image: url('../../../static/images/vegetables.jpg');
+  height: 130px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.dashboard-item__content > div {
+  margin: 0 4px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 1.2;
+  background-color: hsla(0,0%,100%,.7);
+}
+
+.dashboard-item__content > button {
+  background-color: #fff;
+  margin-bottom: 16px;
+}
+
+.dashboard-item__content > button:hover {
+  background-color: #fff;
+}
+
+.dashboard-item__actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0 4px 0;
+}
+
+@media (max-width: 411px) {
   .dashboard-item {
     max-width: 250px;
   }
