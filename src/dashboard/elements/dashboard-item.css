@@ -24,7 +24,6 @@
 }
 
 .dashboard-item__content {
-  background-image: url('../../../static/images/vegetables.jpg');
   height: 130px;
   display: flex;
   flex-flow: row wrap;
