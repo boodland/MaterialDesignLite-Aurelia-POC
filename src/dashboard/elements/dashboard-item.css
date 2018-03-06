@@ -60,4 +60,8 @@
   .dashboard-item {
     max-width: 250px;
   }
+
+  .dashboard-item__actions {
+    justify-content: space-around;
+  }
 }
