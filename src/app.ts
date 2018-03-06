@@ -14,9 +14,9 @@ export class App {
       { 
         route: 'dashboard', 
         name: 'dashboard', 
-        moduleId: PLATFORM.moduleName('dashboard/dashboard-list'), 
+        moduleId: PLATFORM.moduleName('dashboard/elements/dashboard-list'), 
         nav: true, 
-        title: 'Dashboard' 
+        title: 'Dashboard'
       }
     ]);
   }
