@@ -10,7 +10,7 @@ export class App {
     config.options.pushState = true;
     config.options.root = '/';
     config.map([
-      { route: '', redirect: 'dashboard' },
+      { route: '*path', redirect: 'dashboard' },
       { 
         route: 'dashboard', 
         name: 'dashboard', 
