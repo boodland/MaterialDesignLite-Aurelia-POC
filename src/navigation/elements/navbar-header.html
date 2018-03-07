@@ -10,7 +10,9 @@
       <div class="mdl-layout-spacer"></div>
       <span class="mdl-layout-title">${title}</span>
       <div class="mdl-layout-spacer"></div>
-      <button class="mdl-button mdl-js-button mdl-button--icon navbar-header--action" hidden>
+      <button 
+        class="mdl-button mdl-js-button mdl-button--icon navbar-header--action" css="visibility: ${isDashboardCurrentRoute ? 'hidden' : 'visible'};"
+      >
         <i class="material-icons">apps</i>
       </button>
     </div>
