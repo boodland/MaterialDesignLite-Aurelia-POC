@@ -1,10 +1,7 @@
-<template>
+<template bindable="navigation">
   <div class="mdl-layout__drawer">
     <nav class="mdl-navigation">
-      <a class="mdl-navigation__link">Link</a>
-      <a class="mdl-navigation__link">Link</a>
-      <a class="mdl-navigation__link">Link</a>
-      <a class="mdl-navigation__link">Link</a>
+      <a class="mdl-navigation__link" repeat.for="nav of navigation">${nav.title}</a>
     </nav>
   </div>
 </template>
