@@ -2,6 +2,10 @@
   <require from="./navbar-header"></require>
   <require from="./navbar-list.html"></require>
 
-  <navbar-header containerless></navbar-header>
-  <navbar-list containerless></navbar-list>
+  <navbar-header 
+    is-dashboard-current-route.bind="!isDashboardCurrentRoute" 
+    containerless
+  >
+  </navbar-header>
+  <navbar-list navigation.bind="navigation" containerless></navbar-list>
 </template>

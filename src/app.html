@@ -1,9 +1,9 @@
 <template>
   <require from="./app.css"></require>
-  <require from="./navigation/elements/navbar.html"></require>
+  <require from="./navigation/elements/navbar"></require>
   
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <navbar containerless></navbar>
+    <navbar router.bind="router" containerless></navbar>
     <main class="mdl-layout__content">
       <div class="app-layout">
           <router-view></router-view>
