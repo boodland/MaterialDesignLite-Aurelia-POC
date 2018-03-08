@@ -5,7 +5,13 @@
   <navbar-header 
     is-dashboard-current-route.bind="!isDashboardCurrentRoute" 
     containerless
+    menu-click-handler.call="drawerToggleHandler()"
   >
   </navbar-header>
-  <navbar-list navigation.bind="navigation" containerless></navbar-list>
+  <navbar-list 
+    navigation-list.bind="navigation" 
+    containerless
+    click-handler.call="drawerToggleHandler()"
+  >
+  </navbar-list>
 </template>
