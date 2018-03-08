@@ -5,7 +5,8 @@
     <nav class="mdl-navigation">
       <a 
         repeat.for="navigationItem of navigationList"
-        class="mdl-navigation__link"
+        class="mdl-navigation__link 
+               ${navigationItem.isActive ? 'mdl-navigation__link--current' : ''}"
         href.bind="navigationItem.href"
       >
         <i class="material-icons">${navigationItem.settings.icon}</i>
