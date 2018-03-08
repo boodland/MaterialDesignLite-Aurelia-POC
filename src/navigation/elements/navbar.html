@@ -3,7 +3,7 @@
   <require from="./navbar-list.html"></require>
 
   <navbar-header 
-    is-dashboard-current-route.bind="!isDashboardCurrentRoute" 
+    hide-main-page-action.bind="isDashboardCurrentRoute" 
     containerless
     menu-click-handler.call="drawerToggleHandler()"
   >
