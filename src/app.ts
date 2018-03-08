@@ -19,6 +19,14 @@ export class App {
         title: 'Dashboard',
         settings: { icon: 'apps' }
       },
+      { 
+        route: 'subjects', 
+        name: 'subjects', 
+        moduleId: PLATFORM.moduleName('subject/elements/subject-list.html', { chunk: 'subjectChunk'}), 
+        nav: true, 
+        title: 'Subjects',
+        settings: { icon: 'school' }
+      },
       { route: '*path', redirect: 'dashboard' },
     ]);
   }
