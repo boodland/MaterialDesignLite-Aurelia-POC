@@ -4,11 +4,6 @@ export class NavbarHeader {
 
   title: string = 'Subject Hub';
   @bindable isDashboardCurrentRoute: boolean;
+  @bindable menuClickHandler: Function;
 
-  drawerHandler(): void {
-    const drawerButton = document.getElementsByClassName('mdl-layout__drawer-button')[0] as HTMLElement;
-    if (drawerButton) {
-      drawerButton.click();
-    }
-  }
 }
