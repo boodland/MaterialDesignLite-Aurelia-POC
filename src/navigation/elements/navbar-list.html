@@ -1,7 +1,16 @@
-<template bindable="navigation">
-  <div class="mdl-layout__drawer">
+<template bindable="navigationList, clickHandler">
+  <require from="./navbar-list.css"></require>
+
+  <div class="mdl-layout__drawer navbar-list" click.trigger="clickHandler()">
     <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" repeat.for="nav of navigation">${nav.title}</a>
+      <a 
+        repeat.for="navigationItem of navigationList"
+        class="mdl-navigation__link"
+        href.bind="navigationItem.href"
+      >
+        <i class="material-icons">${navigationItem.settings.icon}</i>
+        <span class="navbar-list__link-text">${navigationItem.title}</span>
+      </a>
     </nav>
   </div>
 </template>

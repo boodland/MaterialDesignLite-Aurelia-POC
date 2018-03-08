@@ -1,0 +1,8 @@
+.navbar-list {
+  width: 200px;
+}
+
+.navbar-list__link-text {
+  font-size: 19px;
+  vertical-align: middle;
+}
