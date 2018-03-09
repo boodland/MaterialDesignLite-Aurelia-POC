@@ -4,6 +4,8 @@ export class NavbarHeader {
 
   title: string = 'Subject Hub';
   @bindable hideMainPageAction: boolean;
-  @bindable menuClickHandler: Function;
+  @bindable menuButtonClickHandler: Function;
+  @bindable dashboardButtonClickHandler: Function;
+  @bindable backButtonClickHandler: Function;
 
 }

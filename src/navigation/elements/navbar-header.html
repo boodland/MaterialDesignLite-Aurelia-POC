@@ -3,15 +3,25 @@
 
   <header class="mdl-layout__header">
     <div class="app-layout mdl-layout__header-row">
-      <button class="mdl-button mdl-js-button mdl-button--icon navbar-header--action"
-      click.trigger="menuClickHandler()">
+      <button if.bind="hideMainPageAction" 
+        class="mdl-button mdl-js-button mdl-button--icon navbar-header--action"
+        click.trigger="menuButtonClickHandler()"
+      >
         <i class="material-icons">menu</i>
+      </button>
+      <button else
+        class="mdl-button mdl-js-button mdl-button--icon navbar-header--action"
+        click.trigger="backButtonClickHandler()"
+      >
+        <i class="material-icons">arrow_back</i>
       </button>
       <div class="mdl-layout-spacer"></div>
       <span class="mdl-layout-title">${title}</span>
       <div class="mdl-layout-spacer"></div>
       <button 
-        class="mdl-button mdl-js-button mdl-button--icon navbar-header--action" css="visibility: ${hideMainPageAction ? 'hidden' : 'visible'};"
+        class="mdl-button mdl-js-button mdl-button--icon navbar-header--action" 
+        css="visibility: ${hideMainPageAction ? 'hidden' : 'visible'};"
+        click.trigger="dashboardButtonClickHandler()"
       >
         <i class="material-icons">apps</i>
     </button>
