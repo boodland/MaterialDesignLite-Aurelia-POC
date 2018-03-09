@@ -1,3 +1,11 @@
 <template>
-  <span>I am Subject List!</span>
+  <require from="./subject-item.html"></require>
+  <div class="mdl-grid">
+    <subject-item 
+      class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet"
+      repeat.for="subjectItem of subjectList" 
+      item.bind="subjectItem"
+    >
+    </subject-item>
+  </div>
 </template>
