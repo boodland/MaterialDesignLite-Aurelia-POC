@@ -1,0 +1,60 @@
+.subject-item {
+  padding: 0;
+}
+
+.subject-item__image {
+  width: auto;
+  height: 57px;
+  margin-right: 8px;
+}
+
+.subject-item__content.truncate-text {
+  height: 40px;
+}
+
+.subject-item__content-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.subject-item__content-sub-title__icon {
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+.subject-item__content-sub-title__text {
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.subject-item__type {
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  color: white;
+  width: 50px;
+  height: 60px;
+  padding: 5px;
+}
+
+.subject-item__type-name {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.subject-item__seats {
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  color: white;
+  background-color: grey;
+  width: 55px;
+  height: 60px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.subject-item__seats-number {
+  font-size: 30px;
+  margin-bottom: 10px;
+}

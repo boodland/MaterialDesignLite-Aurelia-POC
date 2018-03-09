@@ -1,0 +1,21 @@
+<template bindable="item">
+  <require from="./subject-item.css"></require>
+    <div with.bind="item" class="mdl-list__item mdl-list__item--two-line subject-item">
+      <img class="subject-item__image" src="/static/images/${image}.jpg">
+      <div class="mdl-list__item-primary-content subject-item__content truncate-text">
+        <div class="subject-item__content-title truncate-text">${item.title}</div>
+        <div class="mdl-list__item-sub-title truncate-text">
+          <i class="material-icons subject-item__content-sub-title__icon">event</i>
+          <span class="subject-item__content-sub-title__text">${assessmentDate.toDateString()}</span>
+        </div>
+      </div>
+      <div class="subject-item__seats">
+        <div class="subject-item__seats-number">${numOfSeats}</div>
+        <div>SEATS</div>
+      </div>
+      <div class="subject-item__type" css="background-color: ${color}">
+        <div class="subject-item__type-name">${type}</div>
+        <div>TYPE</div>
+      </div>
+    </div>
+</template>
