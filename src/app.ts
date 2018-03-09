@@ -22,7 +22,7 @@ export class App {
       { 
         route: 'subjects', 
         name: 'subjects', 
-        moduleId: PLATFORM.moduleName('subject/elements/subject-list.html', { chunk: 'subjectChunk'}), 
+        moduleId: PLATFORM.moduleName('subject/elements/subject-list', { chunk: 'subjectChunk'}), 
         nav: true, 
         title: 'Subjects',
         settings: { icon: 'school' }
