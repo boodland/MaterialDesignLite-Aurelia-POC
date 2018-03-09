@@ -5,21 +5,23 @@ import { EventAggregator, Subscription } from 'aurelia-event-aggregator';
 @autoinject
 export class Navbar {
   
+  private DASHBOARD_ROUTE_NAME: string = 'dashboard';
+
   @bindable router: Router;
-  isDashboardCurrentRoute: boolean;
-  navigation: NavModel[];
-  ea: EventAggregator;
-  sub: Subscription;
+  private isDashboardCurrentRoute: boolean;
+  private navigation: NavModel[];
+  private ea: EventAggregator;
+  private sub: Subscription;
 
   constructor(eventAggregator: EventAggregator) {
     this.ea = eventAggregator;
   }
 
   attached(): void {
-    this.updateDashboardCurrentRouteFlag(this.router.currentInstruction.config.title);
+    this.updateDashboardCurrentRouteFlag(this.router.currentInstruction.config.name);
     this.navigation = this.router.navigation;
     this.sub = this.ea.subscribe('router:navigation:success', (response) => {
-      this.updateDashboardCurrentRouteFlag(response.instruction.config.title);
+      this.updateDashboardCurrentRouteFlag(response.instruction.config.name);
     });
   }
 
@@ -27,8 +29,8 @@ export class Navbar {
     this.sub.dispose();
   }
 
-  updateDashboardCurrentRouteFlag(routeTitle: string): void {
-    this.isDashboardCurrentRoute = routeTitle === 'Dashboard';
+  updateDashboardCurrentRouteFlag(routeName: string): void {
+    this.isDashboardCurrentRoute = routeName === this.DASHBOARD_ROUTE_NAME;
   }
 
   drawerToggleHandler(): void {
@@ -36,5 +38,13 @@ export class Navbar {
     if (drawerButton) {
       drawerButton.click();
     }
+  }
+
+  navigateToDashboardHandler() {
+    this.router.navigateToRoute(this.DASHBOARD_ROUTE_NAME);
+  }
+
+  navigateBackHandler() {
+    this.router.navigateBack();
   }
 }

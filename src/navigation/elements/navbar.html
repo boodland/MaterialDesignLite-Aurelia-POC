@@ -5,7 +5,9 @@
   <navbar-header 
     hide-main-page-action.bind="isDashboardCurrentRoute" 
     containerless
-    menu-click-handler.call="drawerToggleHandler()"
+    menu-button-click-handler.call="drawerToggleHandler()"
+    dashboard-button-click-handler.call="navigateToDashboardHandler()"
+    back-button-click-handler.call="navigateBackHandler()"
   >
   </navbar-header>
   <navbar-list 
