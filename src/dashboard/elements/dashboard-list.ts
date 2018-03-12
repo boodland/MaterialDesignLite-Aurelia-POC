@@ -1,4 +1,4 @@
-import { IDashboardItem } from './../dashboard-item-model';
+import { IDashboardItem } from '../models/dashboard-item';
 
 export class DashboardList {
   dashboardList: IDashboardItem[] = [
