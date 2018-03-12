@@ -1,4 +1,4 @@
-import { ISubjectItem } from './../subject-item-model';
+import { ISubjectItem } from '../models/subject-item';
 
 export class SubjectList {
   subjectList: ISubjectItem[] = [
