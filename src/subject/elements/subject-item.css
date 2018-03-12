@@ -1,10 +1,11 @@
 .subject-item {
+  margin: 0 8px;
   padding: 0;
 }
 
 .subject-item__image {
   width: auto;
-  height: 57px;
+  height: 60px;
   margin-right: 8px;
 }
 
@@ -32,8 +33,7 @@
   vertical-align: middle;
   font-weight: bold;
   color: white;
-  width: 50px;
-  height: 60px;
+  height: 54px;
   padding: 5px;
 }
 
@@ -48,9 +48,8 @@
   font-weight: bold;
   color: white;
   background-color: grey;
-  width: 55px;
-  height: 60px;
-  margin: 5px;
+  height: 54px;
+  margin: 0 5px;
   padding: 5px;
 }
 
