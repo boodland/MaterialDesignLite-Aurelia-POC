@@ -3,7 +3,7 @@ import { FrameworkConfiguration } from 'aurelia-framework';
 import { PLATFORM } from 'aurelia-pal';
 
 export function configure(config: FrameworkConfiguration): void {
-  var router = config.aurelia.container.get(Router);
+  var router: Router = config.aurelia.container.get(Router);
   router.addRoute(
     { 
       route: 'subjects', 
@@ -14,4 +14,11 @@ export function configure(config: FrameworkConfiguration): void {
       settings: { icon: 'school' }
     }
   );
+  router.addRoute(
+    { 
+      route: 'subjects/:id', 
+      name: 'subject-details', 
+      moduleId: PLATFORM.moduleName('subject/elements/subject-details.html', { chunk: 'subjectChunk'})
+    }
+  )
 }
