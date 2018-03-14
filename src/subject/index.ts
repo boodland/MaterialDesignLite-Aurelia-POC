@@ -16,9 +16,9 @@ export function configure(config: FrameworkConfiguration): void {
   );
   router.addRoute(
     { 
-      route: 'subjects/:id', 
+      route: 'subjects/:subjectId',
       name: 'subject-details', 
-      moduleId: PLATFORM.moduleName('subject/elements/subject-details.html', { chunk: 'subjectChunk'})
+      moduleId: PLATFORM.moduleName('subject/elements/subject-details', { chunk: 'subjectChunk'})
     }
   )
 }
