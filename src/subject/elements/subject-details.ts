@@ -1,8 +1,11 @@
+import { SubjectService } from './../services/subject';
+import { ISubjectItem } from './../models/subject-item';
+
 export class SubjectDetails {
 
-  private subjectId: number;
+  private selectedSubject: ISubjectItem;
 
   activate(params: any) {
-    this.subjectId = params.subjectId;
+    this.selectedSubject = SubjectService.getSubject(params.subjectId);
   }
 }
