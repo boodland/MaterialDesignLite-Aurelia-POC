@@ -39,4 +39,8 @@ export class SubjectService {
   static getSubjects(): ISubjectItem[] {
     return this.subjects;
   }
+
+  static getSubject(subjectId: number) : ISubjectItem {
+    return this.subjects.find(subject => subject.subjectId === Number(subjectId));
+  }
 }
