@@ -20,5 +20,5 @@ export function configure(config: FrameworkConfiguration): void {
       name: 'subject-details', 
       moduleId: PLATFORM.moduleName('subject/elements/subject-details', { chunk: 'subjectChunk'})
     }
-  )
+  );
 }
