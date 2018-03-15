@@ -1,0 +1,43 @@
+.subject-details {
+  padding: 0;
+}
+
+.subject-details__header {
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.subject-details__header-image {
+  height: 46px;
+}
+
+.subject-details__header-title {
+  font-size: 30px;
+}
+
+.subject-details__header-type {
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  padding: 5px;
+  font-size: 40px;
+}
+
+.subject-details__description {
+  width: 100%;
+  text-align: center;
+}
+
+.subject-details__description--grey {
+  color: grey;
+}
+
+.subject-details__content {
+  box-shadow: 0 1px 0 0 rgba(0,0,0,.12);
+  flex-direction: column;
+  align-items: start;
+  line-height: 1.5em;
+}
+
+
+

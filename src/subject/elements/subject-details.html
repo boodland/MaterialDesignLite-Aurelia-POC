@@ -1,3 +1,86 @@
 <template>
-  I am the details of the subject with id= ${subjectId}!
+  <require from="./subject-details.css"></require>
+
+  <div class="mdl-list subject-details" with.bind="selectedSubject">
+    <li class="mdl-list__item subject-details__header">
+      <img class="subject-details__header-image" src="/static/images/${image}.jpg">
+      <div class="subject-details__header-title">
+        ${title.toUpperCase()}
+      </div>
+      <div class="subject-details__header-type" css="background-color: ${color}">
+        ${type}
+      </div>
+    </li>
+    <li class="mdl-list__item">
+      <span class="mdl-list__item-primary-content">
+        Overview
+        <span class="mdl-list__item-text-body subject-details__description subject-details__description--grey">
+          ${numOfSeats} Seats
+        </span>
+      </span>
+      <span class="mdl-list__item-secondary-action">
+        <i class="material-icons subject-details__description--grey">info_outline</i>
+      </span>
+    </li>
+    <li class="mdl-list__item subject-details__content">
+      <span>This subject is blah blah blah</span>
+      <span>Blah blah blah...</span>
+      <span>More blah blah blah</span>
+    </li>
+    <li class="mdl-list__item">
+      <span class="mdl-list__item-primary-content">
+        Assessment Date
+        <span class="mdl-list__item-text-body subject-details__description subject-details__description--grey">
+          ${assessmentDate.toDateString()}
+        </span>
+      </span>
+      <span class="mdl-list__item-secondary-action">
+        <i class="material-icons subject-details__description--grey">event</i>
+      </span>
+    </li>
+    <li class="mdl-list__item subject-details__content">
+      <span>
+        <label>City:</label>A city in the world
+      </span>
+      <span>
+        <label>Address:</label> Somewhere in the city
+      </span>
+      <span>
+        <label>Time:</label> At a specific time in the address
+      </span>
+    </li>
+    <li class="mdl-list__item">
+      <span class="mdl-list__item-primary-content">
+        Requirements
+        <span class="mdl-list__item-text-body subject-details__description subject-details__description--grey">
+            Mandatory to have them
+        </span>
+      </span>
+      <span class="mdl-list__item-secondary-action">
+        <i class="material-icons subject-details__description--grey">report_problem</i>
+      </span>
+    </li>
+    <li class="mdl-list__item subject-details__content">
+      <span>Requirement 1</span>
+      <span>Requirement 2</span>
+      <span>Requirement 3</span>
+      <span>Requirement 4</span>
+      <span>Requirement 5</span>
+    </li>
+    <li class="mdl-list__item">
+      <span class="mdl-list__item-primary-content">
+        Syllabus
+      </span>
+      <span class="mdl-list__item-secondary-action">
+        <i class="material-icons subject-details__description--grey">library_books</i>
+      </span>
+    </li>
+    <li class="mdl-list__item subject-details__content">
+      <span>Lesson 1</span>
+      <span>Lesson 2</span>
+      <span>Lesson 3</span>
+      <span>Lesson 4</span>
+      <span>Lesson 5</span>
+    </li>
+  </div>
 </template>
