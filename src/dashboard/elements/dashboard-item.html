@@ -14,8 +14,10 @@
       css="background-image: url('/static/images/${image}.jpg')"
     >
       <div>${numOfSeats} Seats</div>
-      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-        View Subject
+      <button class="mdl-button mdl-button--raised">
+        <a route-href="route: subject-details; params.bind: {subjectId: subjectId}">
+          View Subject
+        </a>
       </button>
     </div>
     <div class="mdl-card__actions mdl-card--border dashboard-item__actions">
