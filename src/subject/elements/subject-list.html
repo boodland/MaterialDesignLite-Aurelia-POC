@@ -1,11 +1,9 @@
 <template>
   <require from="./subject-item.html"></require>
-  <div class="mdl-grid mdl-grid--no-spacing	">
     <subject-item 
       class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet"
       repeat.for="subjectItem of subjectList" 
       item.bind="subjectItem"
     >
     </subject-item>
-  </div>
 </template>
