@@ -4,7 +4,6 @@ import { EventAggregator, Subscription } from 'aurelia-event-aggregator';
 
 @autoinject
 export class Navbar {
-  
   private DASHBOARD_ROUTE_NAME: string = 'dashboard';
 
   @bindable router: Router;
