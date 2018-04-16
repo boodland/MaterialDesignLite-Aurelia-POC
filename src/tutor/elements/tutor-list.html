@@ -1,0 +1,12 @@
+<template>
+  <require from="./tutor-item.html"></require>
+  
+  <div class="mdl-grid mdl-grid--no-spacing padding-top">
+    <tutor-item 
+      class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet"
+      repeat.for="tutorItem of tutorList" 
+      item.bind="tutorItem"
+    >
+    </tutor-item>
+  </div>
+</template>
