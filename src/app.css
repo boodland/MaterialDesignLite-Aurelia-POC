@@ -19,3 +19,7 @@ a[route-href] {
   text-decoration: none;
   color: inherit;
 }
+
+.padding-top {
+  padding-top: 10px !important;
+}
