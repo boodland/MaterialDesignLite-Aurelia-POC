@@ -8,7 +8,7 @@ export function configure(config: FrameworkConfiguration): void {
     { 
       route: 'subjects', 
       name: 'subjects', 
-      moduleId: PLATFORM.moduleName('subject/elements/subject-container.html', { chunk: 'subjectChunk'}), 
+      moduleId: PLATFORM.moduleName('subject/elements/subject-list', { chunk: 'subjectChunk'}), 
       nav: 2, 
       title: 'Subjects',
       settings: { icon: 'school' }
