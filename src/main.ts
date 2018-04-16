@@ -12,7 +12,8 @@ export function configure(aurelia: Aurelia) {
   aurelia.use
     .standardConfiguration()
     .feature(PLATFORM.moduleName('resources/index'))
-    .feature(PLATFORM.moduleName('subject/index'));
+    .feature(PLATFORM.moduleName('subject/index'))
+    .feature(PLATFORM.moduleName('tutor/index'));
 
   // Uncomment the line below to enable animation.
   // aurelia.use.plugin(PLATFORM.moduleName('aurelia-animator-css'));
