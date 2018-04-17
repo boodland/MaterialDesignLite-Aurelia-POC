@@ -3,6 +3,16 @@
     with.bind="item" 
     class="mdl-list__item mdl-list__item--two-line"
   >
-    ${fullName}
+    <span class="mdl-list__item-primary-content">
+      <img class="mdl-list__item-avatar" src="${thumbnail}">
+      <span>${fullName}</span>
+      <span class="mdl-list__item-sub-title">
+        <i class="material-icons" repeat.for="ratingStar of rating">start</i>
+      </span>
+    </span>
+    <button 
+      class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--red">
+      Contact
+    </button>
   </a>
 </template>
