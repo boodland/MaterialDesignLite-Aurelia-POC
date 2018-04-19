@@ -14,4 +14,11 @@ export function configure(config: FrameworkConfiguration): void {
       settings: { icon: 'person' }
     }
   );
+  router.addRoute(
+    { 
+      route: 'tutors/:tutorId',
+      name: 'tutor-details', 
+      moduleId: PLATFORM.moduleName('tutor/elements/tutor-details.html', { chunk: 'tutorChunk'})
+    }
+  );
 }
