@@ -1,13 +1,19 @@
-<template bindable="item">  
+<template bindable="item, itemid">
+  <require from="./tutor-item.css"></require>
+
   <a 
     with.bind="item" 
     class="mdl-list__item mdl-list__item--two-line"
+    route-href="route: tutor-details; params.bind: {tutorId: itemid}"
   >
     <span class="mdl-list__item-primary-content">
       <img class="mdl-list__item-avatar" src="${thumbnail}">
-      <span>${fullName}</span>
+      <span class="tutor-item__full-name">${fullName.toUpperCase()}</span>
       <span class="mdl-list__item-sub-title">
-        <i class="material-icons" repeat.for="ratingStar of ratings">${ratingStar}</i>
+        <i class="material-icons tutor-item__ratings--text-color" 
+          repeat.for="ratingStar of ratings">
+          ${ratingStar}
+        </i>
       </span>
     </span>
     <button 
