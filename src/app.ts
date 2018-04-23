@@ -1,7 +1,7 @@
 import { RouterConfiguration, Router } from 'aurelia-router';
 import { PLATFORM } from 'aurelia-pal';
 
-import { AppAuthorizationStep } from './appAuthorizationStep';
+import { AppAuthorizationStep } from './app-authorization-step';
 
 export class App {
   router: Router;
