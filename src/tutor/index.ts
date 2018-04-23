@@ -18,7 +18,8 @@ export function configure(config: FrameworkConfiguration): void {
     { 
       route: 'tutors/:tutorId',
       name: 'tutor-details', 
-      moduleId: PLATFORM.moduleName('tutor/elements/tutor-details.html', { chunk: 'tutorChunk'})
+      moduleId: PLATFORM.moduleName('tutor/elements/tutor-details.html', { chunk: 'tutorChunk'}),
+      settings: { requiresAuth: true }
     }
   );
 }
