@@ -60,5 +60,12 @@
     "attributes": "resources/attributes",
     "valueConverters": "resources/value-converters",
     "bindingBehaviors": "resources/binding-behaviors"
-  }
+  },
+  "dependencies": [
+    {
+      "name": "aurelia-dialog",
+      "path": "../node_modules/aurelia-dialog/dist/amd",
+      "main": "aurelia-dialog"
+    }
+  ]
 }
