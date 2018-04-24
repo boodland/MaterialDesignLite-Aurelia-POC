@@ -22,6 +22,17 @@ export class App {
         settings: { icon: 'apps' }
       },
       { 
+        route: 'exams', 
+        name: 'exams', 
+        moduleId: PLATFORM.moduleName('forbidden-element.html'),
+        nav: 4, 
+        title: 'Exams',
+        settings: { 
+          icon: 'edit', 
+          requiresAuth: true, 
+          message: 'navigate to exams list' }
+      },
+      { 
         route: 'login', 
         name: 'login', 
         moduleId: PLATFORM.moduleName('app-login'), 
