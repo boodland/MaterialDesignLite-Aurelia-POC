@@ -21,6 +21,12 @@ export class App {
         title: 'Dashboard',
         settings: { icon: 'apps' }
       },
+      { 
+        route: 'login', 
+        name: 'login', 
+        moduleId: PLATFORM.moduleName('app-login'), 
+        title: 'Login',
+      },
       { route: ['', '*path'], redirect: 'dashboard' },
     ]);
   }
