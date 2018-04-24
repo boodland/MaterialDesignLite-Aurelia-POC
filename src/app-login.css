@@ -1,0 +1,12 @@
+.login-card {
+  width: 100%;
+}
+
+.login-card__title-text {
+  font-weight: bold;
+}
+
+.login-card__text {
+  color: black;
+  font-size: 16px;
+}
