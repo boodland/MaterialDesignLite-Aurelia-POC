@@ -18,7 +18,7 @@ export function configure(config: FrameworkConfiguration): void {
     { 
       route: 'tutors/:tutorId',
       name: 'tutor-details', 
-      moduleId: PLATFORM.moduleName('tutor/elements/tutor-details.html', { chunk: 'tutorChunk'}),
+      moduleId: PLATFORM.moduleName('forbidden-element.html'),
       settings: { requiresAuth: true, message: 'contact a tutor or navigate to the details' }
     }
   );
