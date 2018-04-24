@@ -21,4 +21,20 @@ export function configure(config: FrameworkConfiguration): void {
       moduleId: PLATFORM.moduleName('subject/elements/subject-details', { chunk: 'subjectChunk'})
     }
   );
+  router.addRoute(
+    { 
+      route: 'subjects/:subjectId/exams',
+      name: 'subject-exams', 
+      moduleId: PLATFORM.moduleName('forbidden-element.html'),
+      settings: { requiresAuth: true, message: "navigate to subject's exams" }
+    }
+  );
+  router.addRoute(
+    { 
+      route: 'subjects/:subjectId/tutors',
+      name: 'subject-tutors', 
+      moduleId: PLATFORM.moduleName('forbidden-element.html'),
+      settings: { requiresAuth: true, message: "navigate to subject's tutors" }
+    }
+  );
 }
