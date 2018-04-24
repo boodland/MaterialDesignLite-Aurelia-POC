@@ -19,7 +19,7 @@ export function configure(config: FrameworkConfiguration): void {
       route: 'tutors/:tutorId',
       name: 'tutor-details', 
       moduleId: PLATFORM.moduleName('tutor/elements/tutor-details.html', { chunk: 'tutorChunk'}),
-      settings: { requiresAuth: true }
+      settings: { requiresAuth: true, message: 'contact a tutor or navigate to the details' }
     }
   );
 }
