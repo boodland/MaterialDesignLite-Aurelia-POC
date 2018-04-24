@@ -22,10 +22,18 @@
     </div>
     <div class="mdl-card__actions mdl-card--border dashboard-item__actions">
       <button type="button" class="mdl-chip mdl-color--indigo-500 mdl-color-text--white">
-        <span class="mdl-chip__text">${numOfExams} Exams</span>
+        <span class="mdl-chip__text">
+          <a route-href="route: subject-exams; params.bind: {subjectId: subjectId}">
+            ${numOfExams} Exams
+          </a>
+        </span>
       </button>
       <button type="button" class="mdl-chip mdl-color--pink-A200 mdl-color-text--white">
-        <span class="mdl-chip__text">${numOfTutors} Tutors</span>
+        <span class="mdl-chip__text">
+          <a route-href="route: subject-tutors; params.bind: {subjectId: subjectId}">
+            ${numOfTutors} Tutors
+          </a>
+        </span>
       </button>
     </div>
   </div>
