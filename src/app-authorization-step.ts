@@ -1,10 +1,11 @@
-import { NavigationInstruction, Next } from 'aurelia-router';
+import { NavigationInstruction, Next, RedirectToRoute } from 'aurelia-router';
 
 export class AppAuthorizationStep {
   
   run(navigationInstruction: NavigationInstruction, next: Next): Promise<any> {
-    if (navigationInstruction.getAllInstructions().some(i => i.config.settings.requiresAuth)) { 
-      return next.cancel();
+    const routeSettings = navigationInstruction.config.settings;
+    if (routeSettings && routeSettings.requiresAuth) { 
+      return next.cancel(new RedirectToRoute('login', { message: routeSettings.message }));
     }
     else {
       return next();
